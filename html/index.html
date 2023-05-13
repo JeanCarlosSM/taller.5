@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de cuadros</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/utilidades.js" ></script>
+</head>
+<body>
+    <script>
+
+        let mujer = createTag("div")
+        mujer.classList.add("mujer")
+
+        let primeracasilla = createTag("div")
+        primeracasilla.classList.add("primeracasilla")
+
+        let compuesto = createTag("div")
+        compuesto.classList.add("compuesto")
+
+        let personajeCorriendo = createTag("div")
+        personajeCorriendo.classList.add("personaje")
+        let gym = createTag("div")
+        gym.classList.add("fondo_gym")
+        gym.classList.add("contenedor-centrado")
+        let mt09 = createTag("div")
+        mt09.classList.add("mt09")
+        mt09.classList.add("contenedor-centrado")
+
+        let sentadilla = createTag("div")
+        sentadilla.classList.add("fondo_sentadilla")
+        let koenigseggwatchers = createTag("div")
+        koenigseggwatchers.classList.add("etiqueta_koenigsegg")
+        let formulario = createTag("div")
+        formulario.classList.add("formulario")
+
+        let imgprimeracasilla = createTagImage("")
+        imgprimeracasilla.classList.add("imagen_primeracasilla")
+
+        let tagH3primeracasilla = createTagWithText("h3", "Weight Training")
+        let tagPprimeracasilla = createTagWithText("p", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem, similique sunt quos tempore, corporis maiores")
+
+        addElementContainer(primeracasilla, imgprimeracasilla)
+        addElementContainer(primeracasilla, tagH3primeracasilla)
+        addElementContainer(primeracasilla, tagPprimeracasilla)
+
+        let tagH3compuesto = createTagWithText("h3", "7 Day FREE Trial")
+        let tagPcompuesto = createTagWithText("p", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, delectus? Autem facere mollitia")
+
+        addElementContainer(compuesto, tagH3compuesto)
+        addElementContainer(compuesto, tagPcompuesto)
+
+        let imgPersonaCorriendo = createTagImage("")
+        imgPersonaCorriendo.classList.add("imagen_correr")
+
+        let tagH3PersonaCorriendo = createTagWithText("h3", "Cardio Workout")
+        let tagPPersonaCorriendo = createTagWithText("p", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem, similique sunt quos tempore, corporis maiores")
+
+        addElementContainer(personajeCorriendo, imgPersonaCorriendo)
+        addElementContainer(personajeCorriendo, tagH3PersonaCorriendo)
+        addElementContainer(personajeCorriendo, tagPPersonaCorriendo)
+
+        let tagH3gym = createTagWithText("h3", "Training Programs")
+        tagH3gym.classList.add("texto-center")
+        addElementContainer(gym, tagH3gym)
+
+        let tagH3Mt09 = createTagWithText("h3", "Agility Training")
+        tagH3Mt09.classList.add("texto-center")
+        addElementContainer(mt09, tagH3Mt09)
+
+        let descripcionsentadilla = createTag("div")
+        let tagH1sentadilla = createTagWithText("h1", "Fitnes")
+        tagH1sentadilla.classList.add("texto_sentadilla")
+        let tagPsentadilla = createTagWithText("p", "What works for you")
+        tagPsentadilla.classList.add('texto_sentadilla_pequeño')
+        addElementContainer(descripcionsentadilla, tagH1sentadilla)
+        addElementContainer(descripcionsentadilla, tagPsentadilla)
+        addElementContainer(sentadilla, descripcionsentadilla)
+
+        let fondoGrisCodewatchers = createTag("div")
+        fondoGrisCodewatchers.classList.add('fondo_gris')
+        
+        let contenidoFormulario = createTag("div")
+        contenidoFormulario.classList.add('centrar-formulario')
+        let tagH3Formulario = createTagWithText("h3", "Book a secsion")
+        let inputName = createTag("input")
+        inputName.classList.add('display-block')
+        inputName.classList.add('mb')
+        inputName.setAttribute("placeholder", "Name");
+        inputName.setAttribute("type", "text");
+        let inputEmail = createTag("input")
+        inputEmail.classList.add('display-block')
+        inputEmail.classList.add('mb')
+        inputEmail.setAttribute("placeholder", "Email Addres");
+        inputEmail.setAttribute("type", "text");
+        let textarea = createTag("textarea")
+        textarea.classList.add('display-block')
+        textarea.classList.add('mb')
+        textarea.setAttribute("placeholder", "Message");
+        let contenedorBoton = createTag('div')
+        contenedorBoton.classList.add('flex-end')
+        let boton = createTag("input")
+        boton.classList.add('btn-rojo')
+        boton.setAttribute("type", "submit");
+        boton.setAttribute("value", "Save Now");
+
+        addElementContainer(contenidoFormulario, inputName)
+        addElementContainer(contenidoFormulario, inputEmail)
+        addElementContainer(contenidoFormulario, textarea)
+        addElementContainer(contenedorBoton, boton)
+        addElementContainer(contenidoFormulario, contenedorBoton)
+        addElementContainer(formulario, tagH3Formulario)
+        addElementContainer(formulario, contenidoFormulario)
+        addElementContainer(mujer, primeracasilla)
+        addElementContainer(mujer, compuesto)
+        addElementContainer(mujer, personajeCorriendo)
+        addElementContainer(mujer, gym)
+        addElementContainer(mujer, mt09)
+        addElementContainer(mujer, sentadilla)
+        addElementContainer(mujer, koenigseggwatchers)
+        addElementContainer(mujer, formulario)
+        addElement(mujer)
+
+    </script>
+</body>
+</html>
